@@ -66,7 +66,7 @@ button {
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 3px 6px 0px slategray;
-        padding: 25px;
+        padding: 25px 0px 25px 0px;
         
     }
     form {
