@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Editar Producto</title>
+    <link rel="stylesheet" href="formEdit.css">
+    <script src="formEdit.js"></script>
+</head>
+<body>
+    <h1>Editar Producto</h1>
+    <form id="FCrear" action="POST">
+        <label id="producto" for="">Nombre del producto</label>
+        <input id="productName" type="text">
+
+        <label id="cantidad" for="">Cantidad</label>
+        <input id="amount" type="text">
+
+        <label id="precio" for="">Precio</label>
+        <input id="price" type="text">
+
+        <label id="categoria" for="">Categorias</label>
+        <select name="" id="category">
+            <option value="">Casa</option>
+            <option value="">Accesorios</option>
+            <option value="">Ropa</option>
+        </select>
+
+        <button id="btnGuardar">Guardar</button>
+        <button id="btnCancelar">Cancelar</button>
+    </form>
+</body>
+</html>
