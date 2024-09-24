@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #ffffff ;
+    display: flex;
+    flex-direction:column;
+   justify-content:space-between;
+   font-family: 'Roboto',sans-serif;
+   margin: 10%;
+}
+
+.Encabezado{
+    display:flex;
+   flex-direction:row;
+   justify-content:space-between;;
+   align-items:left; 
+}
+h1{
+    color:#071F21;
+    font-size: 8vh;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.Añadir{
+    margin: 8vh 0;
+    padding: 10px ;
+    background-color: #8dd453 ;
+    color: #071F21;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #071f2187; /* Sombra sutil */
+} 
+
+.Añadir:hover {
+    background-color: #a4d17f;
+  }
+  
+  .Añadir:active {
+    background-color: #7fbd4d;
+  }
+
+
+/* Contenedor del buscador */
+.Buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /*max-width: 600px;*/
+  margin: 20px auto;
+  background-color: #f5f5f5; /* Fondo suave */
+  border-radius: 30px;
+  padding: 10px;
+  
+}
+
+/* Estilo para el campo de búsqueda */
+.BarraB {
+  flex: 1; /* Hace que el input ocupe todo el espacio disponible */
+  border: none;
+  padding: 12px ;
+  font-size: 16px;
+  border-radius: 15px 0 0 15px; /* Bordes redondeados solo en la izquierda */
+  outline: none;
+  background-color: #fff;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.BarraB::placeholder {
+  color: #aaa; /* Color del texto placeholder */
+  }
+
+/* Estilo para el botón de búsqueda */
+.Blupa {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 0 30px 30px 0; /* Bordes redondeados solo en la derecha */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+/* Efecto hover para el botón */
+.Blupa:hover {
+  background-color: #8dd453 ; /* Color al pasar el cursor */
+}
+
+/* Efecto al hacer foco en el campo de búsqueda */
+.BarraB:focus {
+    background-color: #eaeaea; /* Fondo más claro al hacer focus */
+  }
+
+.Lupa{
+    width: 15px;
+}
+
+.Botones{
+    display:flex;
+   flex-direction:crow;
+   justify-content:space-around;
+   align-items:center;
+   margin: 15px;
+}
+
+.Boton {
+    padding: 5px 20px;
+    background-color: #dbe5be70 ;
+    color: #0E4039;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: flex;
+    align-items: center;
+  }
+  
+  .Boton:hover {
+    background-color: #cce08e85;
+  }
+  
+  .Boton:active {
+    background-color: #aabd7185;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+ }
+
+ .Acciones{
+    display: flex;
+    flex-direction: row;
+    
+ }
+ 
+ .BAcciones{
+   margin: 10px;
+   width: 45px;
+   height: 45px;
+ }
