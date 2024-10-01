@@ -19,5 +19,32 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 
+  // Función para agregar un documento a Firestore
+  function agregarDocumento() {
+    db.collection("prueba").add({
+      nombre: "Firebase",
+      descripcion: "Conexión exitosa"
+    })
+    .then((docRef) => {
+      console.log("Documento escrito con ID: ", docRef.id);
+    })
+    .catch((error) => {
+      console.error("Error añadiendo documento: ", error);
+    });
+  }
+
+  // Función para leer documentos desde Firestore
+function leerDocumentos() {
+    db.collection("prueba").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data().nombre}: ${doc.data().descripcion}`);
+      });
+    });
+  }
+
+  // Llama a las funciones
+agregarDocumento();
+leerDocumentos();
+
 //  `db` está disponible para cualquier archivo JS en tu proyecto
 export { db };
